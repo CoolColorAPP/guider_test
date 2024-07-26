@@ -1,0 +1,184 @@
+:root {
+  --max-width: 1100px;
+  --border-radius: 12px;
+  --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
+    "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
+    "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
+
+  --foreground-rgb: 255, 248, 243;
+  --background-rgb: 247, 231, 220;
+
+  --card-rgb: 117, 134, 147;
+  --card-text-rgb: 255, 248, 243;
+
+  --book-rgb: 64, 93, 114, 0.3;
+  ;
+
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  background: rgb(var(--background-rgb));
+}
+
+body {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  width: 100vw;
+  color: rgb(var(--foreground-rgb));
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  width: 500px;
+  height: auto;
+  margin-top: 103px;
+}
+
+header, menu, section {
+  display: flex;
+  width: 100%;
+  background: rgb(var(--card-rgb));
+  border-radius: 32px;
+  margin-bottom: 30px;
+}
+
+header {
+  align-items: center;
+  justify-content: center;
+  height: 128px;
+  font-size: 56px;
+}
+
+menu {
+  align-items: start;
+  justify-content: space-between;
+  font-size: 12px;
+  padding: 30px;
+}
+
+section {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: start;
+  justify-content: start;
+  background: rgb(var(--book-rgb));
+  border-radius: 20px;
+  font-size: 12px;
+  padding: 16px;
+  margin-bottom: 30px;
+}
+
+.board_book_data {
+  display: block;
+  width: 399px;
+  padding: 10px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.52px;
+}
+
+.board_book_data h2 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.36px;
+  margin-bottom: 0.5em;
+}
+
+.board_book_data h2 span {
+  font-weight: 900;
+}
+
+.board_book_footer {
+  display: flex;
+  align-items: end;
+  width: 412px;
+  height: 43px;
+  border-top: 1px solid #8498A8;
+  margin-top: 1em;
+}
+
+.board_book_footer button {
+  display: block;
+  height: 35px;
+  border-radius: 17.5px;
+  border: none;
+  background: rgb(var(--foreground-rgb));
+  padding: 10px;
+  margin-right: 20px;
+  transition: rules .3s ease-in-out;
+}
+
+.board_book_footer button:hover {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(64, 93, 114, 1);
+  transition: rules .3s ease-in-out;
+  cursor: pointer;
+}
+
+.margin_left {
+  margin-left: 20px;
+}
+
+li {
+  list-style: none;
+  padding-inline-start: 0;
+}
+li:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.block_menu {
+  display: flex;
+  white-space: nowrap;
+}
+
+.arrowdown {
+  margin: 3px 0 0 5px;
+}
+
+.arrowup {
+  margin: 3px 0 0 5px;
+  transform: scale(1, -1);
+}
+
+.field {
+  text-align: right;
+  color: rgb(var(--foreground-rgb));
+  border: none;
+  background: rgb(var(--card-rgb));
+  line-height: 1em;
+  font-weight: 900;
+}
+
+.total_price {
+  display: flex;
+  width: 100%;
+  align-items: start;
+  justify-content: start;
+}
